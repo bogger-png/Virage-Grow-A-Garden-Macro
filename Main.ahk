@@ -775,9 +775,6 @@ for _, gpId in GAME_PASS_IDS {
         break
     }
 }
-    if (!hasPass) {
-        MsgBox, 48, Does Not Own, User '%username%' (ID %userId%) does NOT own GamePass %GAME_PASS_ID%.nMake sure inventory is public or the pass is purchased.
-        ExitApp
     }
     EnvGet, compName, ComputerName
     encodedUser := URLEncode(username)
